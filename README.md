@@ -26,6 +26,9 @@ Just import *fontawesome* right after *twitter/bootstrap*:
     @import 'fontawesome';
 ```
 
+([simple demo](http://sharp-ocean-6085.herokuapp.com/))
+
+
 ## Helper methods
 
 To place Font Awesome icon add to *i* element and set *class*
