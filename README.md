@@ -21,6 +21,21 @@ Just import *fontawesome* right after *twitter/bootstrap*:
     @import 'fontawesome';
 
 
+## Helper methods
+
+To place Font Awesome icon add to *i* element and set *class*
+attribute to an icon name, for example:
+
+    <i class="icon-trash"></i>
+
+To ease placing Font Awesome icons, I defined a few helper methods:
+[application_helper.rb]()
+
+
+
+##
+
+
 ## License
 
 The font and LESS from [Font Awesome](http://fortawesome.github.com/Font-Awesome) are under CC-BY-3.0.
