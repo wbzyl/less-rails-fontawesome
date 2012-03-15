@@ -1,5 +1,3 @@
-# -*- encoding: utf-8 -*-
-
 $:.push File.expand_path("../lib", __FILE__)
 
 require "less-rails-fontawesome/version"
@@ -7,7 +5,7 @@ require "less-rails-fontawesome/version"
 Gem::Specification.new do |s|
   s.name        = "less-rails-fontawesome"
   s.version     = Font::Awesome::Less::Rails::VERSION
-  s.authors     = ["Włodek Bzyl"]
+  s.authors     = ["Wlodek Bzyl"]
   s.email       = ["matwb@ug.edu.pl"]
   s.homepage    = "https://github.com/wbzyl/less-rails-fontawesome"
   s.summary     = %q{Font Awesome in LESS for Rails 3.1+ Asset Pipeline}
