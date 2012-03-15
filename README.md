@@ -31,7 +31,7 @@ attribute to an icon name, for example:
 To ease placing Font Awesome icons, I defined in
 [application_helper.rb](https://github.com/wbzyl/less-rails-fontawesome/blob/master/application_helper.rb)
 a few helper methods.
-For example, to place *icon-upload-alt* icon next to *Edit* button write:
+For example, to place *icon-upload-alt* icon next to *Edit* button write something like:
 
     <%= ilink_to "upload-alt Edit", edit_post_path(post), class: 'btn btn-mini' %>
 
