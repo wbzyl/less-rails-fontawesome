@@ -10,12 +10,12 @@ Add the gem to your *assets* group in the *Gemfile*:
 
     gem 'less-rails-fontawesome', :group => :assets
 
-Then in your `app/assets/stylesheets/application.css.less`:
+Then in your *app/assets/stylesheets/application.css.less*:
 
     @import 'fontawesome';
 
 You can also use it with the [less-rails-bootstrap](https://github.com/metaskills/less-rails-bootstrap) gem.
-Just import *fontawesome* right after *bootstrap*:
+Just import *fontawesome* right after *twitter/bootstrap*:
 
     @import 'twitter/bootstrap';
     @import 'fontawesome';
