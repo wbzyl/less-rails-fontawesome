@@ -29,7 +29,7 @@ attribute to an icon name, for example:
     <i class="icon-trash"></i>
 
 To ease placing Font Awesome icons, I defined in
-[application_helper.rb](https://github.com/wbzyl/less-rails-fontawesome/blob/master/application_helper.rb))
+[application_helper.rb](https://github.com/wbzyl/less-rails-fontawesome/blob/master/application_helper.rb)
 a few helper methods.
 For example, to place *icon-upload-alt* icon next to *Edit* button write:
 
