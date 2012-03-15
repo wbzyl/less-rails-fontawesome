@@ -44,16 +44,16 @@ a few helper methods.
 For example, to place *icon-upload-alt* icon next to *Edit* button write something like:
 
 ```rhtml
-    <%= ilink_to "upload-alt Edit", edit_post_path(post), class: 'btn btn-mini' %>
+    <%= ilink_to "upload-alt", "Edit", edit_post_path(post), class: 'btn btn-mini' %>
 ```
 
 to place *icon-trash* next to *Destroy* button write:
 
 ```rhtml
-    <%= ilink_to 'trash Destroy', post, confirm: 'Are you sure?', method: :delete, class: 'btn btn-mini btn-danger'%>
+    <%= ilink_to "trash", "Destroy", post, confirm: 'Are you sure?', method: :delete, class: 'btn btn-mini btn-danger'%>
 ```
 
-The idea is to prefix the link text with the icon name stripped off *icon-* prefix.
+The idea is to precede the link text with the icon name stripped off *icon-* prefix.
 
 
 ## License
