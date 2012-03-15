@@ -1,12 +1,12 @@
-# Font Awesome + SASS + Rails
+# Font Awesome + Less + Rails 3.2+ Asset Pipeline
 
 With LESS and fonts from [Font Awesome](http://fortawesome.github.com/Font-Awesome),
-`font-awesome-sass-rails` is a gem to integrate Font Awesome to your Rails 3.2+ application.
+*less-rails-fontawesome* is a gem to integrate Font Awesome to your Rails 3.2+ application.
 
 
 ## Installation
 
-Add `font-awesome-sass-rails` gem to your `assets` group in the `Gemfile`:
+Add the gem to your *assets* group in the *Gemfile*:
 
     gem 'less-rails-fontawesome', :group => :assets
 
@@ -14,13 +14,10 @@ Then in your `app/assets/stylesheets/application.css.less`:
 
     @import 'fontawesome';
 
-That's it!
+You can also use it with the [less-rails-bootstrap](https://github.com/metaskills/less-rails-bootstrap) gem.
+Just import *fontawesome* right after *bootstrap*:
 
-You can also use it with the LESS-converted Bootstrap gem,
-like [less-rails-bootstrap](https://github.com/metaskills/less-rails-bootstrap).
-Just import font-awesome right after bootstrap:
-
-    @import 'bootstrap';
+    @import 'twitter/bootstrap';
     @import 'fontawesome';
 
 
