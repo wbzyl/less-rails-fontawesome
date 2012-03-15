@@ -20,6 +20,8 @@ Just import *fontawesome* right after *twitter/bootstrap*:
     @import "twitter/bootstrap";
     @import "fontawesome";
 
+([simple demo](http://sharp-ocean-6085.herokuapp.com/))
+
 
 ## Helper methods
 
