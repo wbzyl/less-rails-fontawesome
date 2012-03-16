@@ -52,6 +52,11 @@ to place *icon-trash* next to text *Destroy* button write:
 ```rhtml
     <%= ilink_to "trash", "Destroy", post, confirm: 'Are you sure?', method: :delete, class: 'btn btn-mini btn-danger'%>
 ```
+or somthing like that:
+
+```ruby
+    <%= ilink_to 'book', 'New Fortune', new_fortune_path, class: 'btn btn-primary'%>
+```
 
 The idea is to precede the link text with the icon name stripped off *icon-* prefix.
 
