@@ -38,27 +38,22 @@ attribute to a icon name, for example:
     <i class="icon-trash"></i>
 ```
 
-To ease placing Font Awesome icons in Rails *link_to* helper, I defined in
-[application_helper.rb](https://github.com/wbzyl/less-rails-fontawesome/blob/master/application_helper.rb)
-the *ilink_to*  helper method.
+To ease placing icons in Rails *link_to* helper use
+the [ilink_to](https://github.com/wbzyl/less-rails-fontawesome/blob/master/application_helper.rb) helper method.
+
 For example, to place the *icon-upload-alt* icon next to *Edit* write something like:
 
 ```rhtml
     <%= ilink_to "upload-alt", "Edit", edit_post_path(post), class: 'btn btn-mini' %>
 ```
 
-to place *icon-trash* next to text *Destroy* button write:
+or to place *icon-trash* next to text *Destroy* button write:
 
 ```rhtml
     <%= ilink_to "trash", "Destroy", post, confirm: 'Are you sure?', method: :delete, class: 'btn btn-mini btn-danger'%>
 ```
-or somthing like that:
 
-```ruby
-    <%= ilink_to 'book', 'New Fortune', new_fortune_path, class: 'btn btn-primary'%>
-```
-
-The idea is to precede the link text with the icon name stripped off *icon-* prefix.
+(precede the link text with the icon name stripped off *icon-* prefix)
 
 
 ## License
