@@ -3,6 +3,9 @@
 With LESS and fonts from [Font Awesome](http://fortawesome.github.com/Font-Awesome),
 *less-rails-fontawesome* is a gem to integrate Font Awesome to your Rails 3.2+ application.
 
+## Updates
+
+June 6 2012: Now using Font Awesome 2.0!
 
 ## Installation
 
