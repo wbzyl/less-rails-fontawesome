@@ -42,7 +42,7 @@ attribute to a icon name, for example:
 ```
 
 To ease placing icons in Rails *link_to* helper use
-the [ilink_to](https://github.com/wbzyl/less-rails-fontawesome/blob/master/application_helper.rb) helper method.
+the *ilink_to* helper method.
 
 For example, to place the *icon-upload-alt* icon next to *Edit* write something like:
 
