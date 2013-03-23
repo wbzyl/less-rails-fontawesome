@@ -5,7 +5,10 @@ With LESS and fonts from [Font Awesome](http://fortawesome.github.com/Font-Aweso
 
 ## Updates
 
+March 23, 2013: Now using Font Awesome 3.0.2!
+
 January 2, 2013: Now using Font Awesome 3.0!
+
 June 6 2012: Now using Font Awesome 2.0!
 
 ## Installation
@@ -19,7 +22,8 @@ Add the gem to your *assets* group in the *Gemfile*:
 Then in your *app/assets/stylesheets/application.css.less*:
 
 ```css
-    @import 'fontawesome';
+    @import 'font-awesome';
+    @import 'font-awesome-ie7';
 ```
 
 You can also use it with the [less-rails-bootstrap](https://github.com/metaskills/less-rails-bootstrap) gem.
@@ -27,7 +31,8 @@ Just import *fontawesome* right after *twitter/bootstrap*:
 
 ```css
     @import 'twitter/bootstrap';
-    @import 'fontawesome';
+    @import 'font-awesome';
+    @import 'font-awesome-ie7';
 ```
 
 ([simple demo](http://sharp-ocean-6085.herokuapp.com/))
