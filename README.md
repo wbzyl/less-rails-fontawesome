@@ -5,7 +5,10 @@ With LESS and fonts from [Font Awesome](http://fortawesome.github.com/Font-Aweso
 
 ## Updates
 
+March 23, 2013: Now using Font Awesome 3.0.2!
+
 January 2, 2013: Now using Font Awesome 3.0!
+
 June 6 2012: Now using Font Awesome 2.0!
 
 ## Installation
