@@ -32,7 +32,7 @@ Just import *fontawesome* right after *twitter/bootstrap*:
 ```css
     @import 'twitter/bootstrap';
     @import 'font-awesome';
-    @import 'font-awesome-ie7;
+    @import 'font-awesome-ie7';
 ```
 
 ([simple demo](http://sharp-ocean-6085.herokuapp.com/))
