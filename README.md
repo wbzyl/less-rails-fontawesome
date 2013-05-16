@@ -41,7 +41,7 @@ Just import *fontawesome* right after *twitter/bootstrap*:
 @import 'font-awesome-ie7';
 ```
 
-[Simple demo](http://sharp-ocean-6085.herokuapp.com/).
+<!-- [Simple demo](http://sharp-ocean-6085.herokuapp.com/). -->
 
 
 ## Helper methods
