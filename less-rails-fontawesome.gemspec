@@ -8,8 +8,8 @@ Gem::Specification.new do |s|
   s.authors     = ["Wlodek Bzyl"]
   s.email       = ["matwb@ug.edu.pl"]
   s.homepage    = "https://github.com/wbzyl/less-rails-fontawesome"
-  s.summary     = %q{Font Awesome in LESS for Rails 3.1+ Asset Pipeline}
-  s.description = %q{Font Awesome, LESS version, with assets pipeline, for Rails 3.1+ Asset Pipeline}
+  s.summary     = %q{Font Awesome in LESS for Rails Asset Pipeline}
+  s.description = %q{Font Awesome, LESS version, with assets pipeline for Rails Asset Pipeline}
 
   s.rubyforge_project = "less-rails-fontawesome"
 
