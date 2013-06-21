@@ -28,8 +28,8 @@ gem 'less-rails-fontawesome'
 Then in your *app/assets/stylesheets/application.css.less*:
 
 ```css
-@import 'font-awesome';
-@import 'font-awesome-ie7';
+@import 'font-awesome/font-awesome';
+@import 'font-awesome/font-awesome-ie7';
 ```
 
 You can also use it with the [less-rails-bootstrap](https://github.com/metaskills/less-rails-bootstrap) gem.
@@ -37,8 +37,8 @@ Just import *fontawesome* right after *twitter/bootstrap*:
 
 ```css
 @import 'twitter/bootstrap';
-@import 'font-awesome';
-@import 'font-awesome-ie7';
+@import 'font-awesome/font-awesome';
+@import 'font-awesome/font-awesome-ie7';
 ```
 
 <!-- [Simple demo](http://sharp-ocean-6085.herokuapp.com/). -->
