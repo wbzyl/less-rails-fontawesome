@@ -73,10 +73,9 @@ For example, to place the *icon-upload-alt* icon next to *Edit* write something 
 or to place *icon-trash* next to text *Destroy* button write:
 
 ```rhtml
-<%= ilink_to "trash", "Destroy", post, confirm: 'Are you sure?',
+<%= ilink_to "trash", "Destroy", post, data: '{confirm: "Are you sure?"}',
        method: :delete, class: 'btn btn-mini btn-danger'%>
 ```
-
 (precede the link text with the icon name stripped off *icon-* prefix)
 
 
