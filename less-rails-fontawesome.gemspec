@@ -4,7 +4,7 @@ require "less/rails/fontawesome/version"
 
 Gem::Specification.new do |s|
   s.name        = "less-rails-fontawesome"
-  s.version     = Font::Awesome::Less::Rails::VERSION
+  s.version     = Less::Rails::Fontawesome::VERSION
   s.authors     = ["Wlodek Bzyl"]
   s.email       = ["matwb@ug.edu.pl"]
   s.homepage    = "https://github.com/wbzyl/less-rails-fontawesome"
