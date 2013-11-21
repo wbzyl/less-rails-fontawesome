@@ -20,12 +20,17 @@ Add the gem to your *assets* group in the *Gemfile*:
 
 ```ruby
 gem 'therubyracer'
-gem 'less'
 gem 'less-rails'
 gem 'less-rails-fontawesome'
 ```
 
-Then in your *app/assets/stylesheets/application.css.less*:
+Get the full Fontawesome stylesheet with a single line in your *application.css*:
+
+```css
+ *= require font-awesome/font-awesome
+```
+
+Alternatively, in your *app/assets/stylesheets/application.css.less*:
 
 ```css
 @import 'font-awesome/font-awesome';
