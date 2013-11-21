@@ -21,7 +21,7 @@ module Less
             tag_options = tag_options(html_options)
 
             href_attr = "href=\"#{ERB::Util.html_escape(url)}\"" unless href
-            "<a #{href_attr}#{tag_options}><i class=\"fa-#{icon}\"></i> #{ERB::Util.html_escape(name || url)}</a>".html_safe
+            "<a #{href_attr}#{tag_options}><i class=\"fa fa-#{icon}\"></i> #{ERB::Util.html_escape(name || url)}</a>".html_safe
           end
         end
 
