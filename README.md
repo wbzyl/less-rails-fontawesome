@@ -55,7 +55,7 @@ Just import *fontawesome* right after *twitter/bootstrap*:
 
 ## Helper methods
 
-### version 0.7.0
+### for version 0.7.0
 
 To place Font Awesome icon add *i* element and set its *class*
 attribute to a icon name, [for example](http://fontawesome.io/examples/):
@@ -82,7 +82,7 @@ or to place *trash-o* next to text *Destroy* button write:
 (precede the link text with the icon name stripped off *fa-* prefix)
 
 
-### versions prior to 0.7.0
+### for versions prior to 0.7.0
 
 To place Font Awesome icon add *i* element and set its *class*
 attribute to a icon name, for example:
