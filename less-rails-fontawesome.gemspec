@@ -1,6 +1,6 @@
 $:.push File.expand_path("../lib", __FILE__)
 
-require "less-rails-fontawesome/version"
+require "less/rails/fontawesome/version"
 
 Gem::Specification.new do |s|
   s.name        = "less-rails-fontawesome"
@@ -18,6 +18,5 @@ Gem::Specification.new do |s|
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
 
-  s.add_runtime_dependency 'railties', '>= 3.1.1'
-  s.add_runtime_dependency 'less-rails', '>= 2.1.7'
+  s.add_runtime_dependency 'less-rails', '~> 2.4.2'
 end
