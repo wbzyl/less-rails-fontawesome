@@ -6,6 +6,8 @@ to your Rails application. It works with Rails 4.
 
 ### Updates
 
+November 21, 2013: Version 0.7.0 is using Font Awesome 4.0
+
 November 21, 2013: moved files from *vendor/* to *app/* folder; now,
  these files should be precompiled
 
@@ -51,8 +53,36 @@ Just import *fontawesome* right after *twitter/bootstrap*:
 
 <!-- [Simple demo](http://sharp-ocean-6085.herokuapp.com/). -->
 
-
 ## Helper methods
+
+### version 0.7.0
+
+To place Font Awesome icon add *i* element and set its *class*
+attribute to a icon name, [for example](http://fontawesome.io/examples/):
+
+```html
+<i class="fa fa-camera-retro"></i>
+```
+
+To ease placing icons in Rails *link_to* helper use
+the *ilink_to* helper method.
+
+For example, to place the *fa-upload* icon next to *Edit* write something like:
+
+```rhtml
+<%= ilink_to "upload", "Edit", edit_post_path(post), class: 'btn btn-mini' %>
+```
+
+or to place *trash-o* next to text *Destroy* button write:
+
+```rhtml
+<%= ilink_to "trash-o", "Destroy", post, data: '{confirm: "Are you sure?"}',
+       method: :delete, class: 'btn btn-mini btn-danger'%>
+```
+(precede the link text with the icon name stripped off *fa-* prefix)
+
+
+### versions prior to 0.7.0
 
 To place Font Awesome icon add *i* element and set its *class*
 attribute to a icon name, for example:
