@@ -2,9 +2,12 @@
 
 With LESS and fonts from [Font Awesome](http://fortawesome.github.io/Font-Awesome/),
 *less-rails-fontawesome* is a gem to integrate Font Awesome
-to your Rails application. It works wit Rails 3.2 and 4.
+to your Rails application. It works with Rails 4.
 
 ### Updates
+
+November 21, 2013: moved from *vendor/* to *app/* folder; now,
+ the files should be precompiled
 
 May 16, 2013: Now using Font Awesome 3.1.1 and works with Rails 4!
 
@@ -30,20 +33,20 @@ Get the full Fontawesome stylesheet with a single line in your *application.css*
  *= require font-awesome/font-awesome
 ```
 
-Alternatively, in your *app/assets/stylesheets/application.css.less*:
+Alternatively, remove *app/assets/stylesheets/application.css*
+and create *app/assets/stylesheets/application.less* with the content
 
 ```css
 @import 'font-awesome/font-awesome';
-@import 'font-awesome/font-awesome-ie7';
 ```
 
-You can also use it with the [less-rails-bootstrap](https://github.com/metaskills/less-rails-bootstrap) gem.
+You can also use it with
+the [less-rails-bootstrap](https://github.com/metaskills/less-rails-bootstrap) gem.
 Just import *fontawesome* right after *twitter/bootstrap*:
 
 ```css
 @import 'twitter/bootstrap';
 @import 'font-awesome/font-awesome';
-@import 'font-awesome/font-awesome-ie7';
 ```
 
 <!-- [Simple demo](http://sharp-ocean-6085.herokuapp.com/). -->
@@ -70,7 +73,8 @@ For example, to place the *icon-upload-alt* icon next to *Edit* write something 
 or to place *icon-trash* next to text *Destroy* button write:
 
 ```rhtml
-<%= ilink_to "trash", "Destroy", post, confirm: 'Are you sure?', method: :delete, class: 'btn btn-mini btn-danger'%>
+<%= ilink_to "trash", "Destroy", post, confirm: 'Are you sure?',
+       method: :delete, class: 'btn btn-mini btn-danger'%>
 ```
 
 (precede the link text with the icon name stripped off *icon-* prefix)
