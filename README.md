@@ -8,8 +8,8 @@ to your Rails application. It works with Rails 4.
 
 November 21, 2013: Version 0.7.0 is using Font Awesome 4.0
 
-November 21, 2013: moved files from *vendor/* to *app/* folder; now,
- these files should be precompiled
+November 21, 2013: Move files from *vendor/* to *app/* folder.
+ Now these files should be automatically precompiled
 
 May 16, 2013: Now using Font Awesome 3.1.1 and works with Rails 4!
 
