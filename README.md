@@ -55,6 +55,33 @@ Just import *fontawesome* right after *twitter/bootstrap*:
 
 ## Helper methods
 
+### for version 0.8.0 (renamed `ilink_to` to `fa_link_to`)
+
+To place Font Awesome icon add *i* element and set its *class*
+attribute to a icon name, [for example](http://fontawesome.io/examples/):
+
+```html
+<i class="fa fa-camera-retro"></i>
+```
+
+To ease placing icons in Rails *link_to* helper use
+the *fa_link_to* helper method.
+
+For example, to place the *fa-upload* icon next to *Edit* write something like:
+
+```rhtml
+<%= fa_link_to "upload", "Edit", edit_post_path(post), class: 'btn btn-mini' %>
+```
+
+or to place *trash-o* next to text *Destroy* button write:
+
+```rhtml
+<%= fa_link_to "trash-o", "Destroy", post, data: { confirm: "Are you sure?" },
+       method: :delete, class: 'btn btn-mini btn-danger'%>
+```
+(precede the link text with the icon name stripped off *fa-* prefix)
+
+
 ### for version 0.7.0
 
 To place Font Awesome icon add *i* element and set its *class*
@@ -76,7 +103,7 @@ For example, to place the *fa-upload* icon next to *Edit* write something like:
 or to place *trash-o* next to text *Destroy* button write:
 
 ```rhtml
-<%= ilink_to "trash-o", "Destroy", post, data: '{confirm: "Are you sure?"}',
+<%= ilink_to "trash-o", "Destroy", post, data: { confirm: "Are you sure?" },
        method: :delete, class: 'btn btn-mini btn-danger'%>
 ```
 (precede the link text with the icon name stripped off *fa-* prefix)
@@ -103,7 +130,7 @@ For example, to place the *icon-upload-alt* icon next to *Edit* write something 
 or to place *icon-trash* next to text *Destroy* button write:
 
 ```rhtml
-<%= ilink_to "trash", "Destroy", post, data: '{confirm: "Are you sure?"}',
+<%= ilink_to "trash", "Destroy", post, data: { confirm: "Are you sure?" },
        method: :delete, class: 'btn btn-mini btn-danger'%>
 ```
 (precede the link text with the icon name stripped off *icon-* prefix)

@@ -2,12 +2,12 @@ module Less
   module Rails
     module Fontawesome
       module LinkHelper
-        def ilink_to(*args, &block)
+        def fa_link_to(*args, &block)
           if block_given?
             icon = args[0]
             options = args[1] || {}
             html_options = args[2]
-            ilink_to(icon, capture(&block), options, html_options)
+            fa_link_to(icon, capture(&block), options, html_options)
           else
             icon = args[0]
             name = args[1]
@@ -27,7 +27,7 @@ module Less
 
         # TODO:
 
-        # def ilink_to_unless
+        # def fa_link_to_unless
         #   if condition
         #     if block_given?
         #       block.arity <= 1 ? capture(name, &block) : capture(name, options, html_options, &block)
@@ -35,16 +35,16 @@ module Less
         #       name
         #     end
         #   else
-        #     ilink_to(name, options, html_options)
+        #     fa_link_to(name, options, html_options)
         #   end
         # end
 
-        # def ilink_to_if(condition, name, options = {}, html_options = {}, &block)
-        #   ilink_to_unless !condition, name, options, html_options, &block
+        # def fa_link_to_if(condition, name, options = {}, html_options = {}, &block)
+        #   fa_link_to_unless !condition, name, options, html_options, &block
         # end
 
-        # def ilink_to_unless_current(name, options = {}, html_options = {}, &block)
-        #   ilink_to_unless current_page?(options), name, options, html_options, &block
+        # def fa_link_to_unless_current(name, options = {}, html_options = {}, &block)
+        #   fa_link_to_unless current_page?(options), name, options, html_options, &block
         # end
       end
     end
